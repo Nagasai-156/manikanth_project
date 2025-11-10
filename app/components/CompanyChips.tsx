@@ -3,9 +3,10 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { companyAPI } from '../lib/api'
+import { Company } from '../types/api'
 
 export default function CompanyChips() {
-  const [companies, setCompanies] = useState([])
+  const [companies, setCompanies] = useState<Company[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
