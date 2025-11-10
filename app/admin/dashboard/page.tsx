@@ -218,7 +218,7 @@ export default function AdminDashboard() {
                       {((exp.companies as any)?.logo_url || (exp.companies as any)?.logo) && (
                         <img 
                           src={(exp.companies as any)?.logo_url || (exp.companies as any)?.logo} 
-                          alt={exp.companies.name}
+                          alt={(exp.companies as any)?.name || 'Company'}
                           className="w-12 h-12 rounded-lg object-cover border-2 border-gray-300"
                         />
                       )}
