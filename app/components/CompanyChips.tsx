@@ -16,10 +16,8 @@ export default function CompanyChips() {
     try {
       const response = await companyAPI.getCompanies({
         page: 1,
-        limit: 10,
-        sortBy: 'name',
-        sortOrder: 'asc'
-      })
+        limit: 10
+      } as any)
 
       if (response.success) {
         setCompanies(response.data.companies)
