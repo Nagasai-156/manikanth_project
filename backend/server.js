@@ -47,7 +47,7 @@ app.use(limiter);
 // CORS configuration
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://interview-exp-frontend.onrender.com', 'https://interview-exp-frontend-*.onrender.com'] 
+    ? ['https://manikanth-project.onrender.com', 'https://interview-exp-frontend.onrender.com', 'https://interview-exp-frontend-*.onrender.com'] 
     : ['http://localhost:3000', 'http://localhost:3001', 'http://127.0.0.1:3000', 'http://127.0.0.1:3001'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
