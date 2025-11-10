@@ -19,8 +19,8 @@ export default function CompanyChips() {
         limit: 10
       } as any)
 
-      if (response.success) {
-        setCompanies(response.data.companies)
+      if (response.success && response.data) {
+        setCompanies(response.data.companies || [])
       }
     } catch (error) {
       console.error('Error loading companies:', error)
